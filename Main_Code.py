@@ -11,32 +11,6 @@ group_1_2 = ["Cs", "Ba", "Sr", "Ca", "K", "Na", "La"]  # Group 1 and 2
 transition_metals = ["Nb", "Ta", "Ti", "Zr", "Hf", "Mo", "Al"]  # Transition metals
 oxygen = ["O"]
 
-# Input and target columns for the model
-input_cols = [
-    'mean_at_num', 'std_at_num',
-    'mean_grp_num', 'std_grp_num',
-    'mean_mend_num', 'std_mend_num',
-    'mean_row_num', 'std_row_num',
-    'mean_atomic_radius', 'std_atomic_radius',
-    'mean_ionic_radius', 'std_ionic_radius',
-    'mean_van_der_waal_radius', 'std_van_der_waal_radius',
-    'mean_atomic_radius_calculated', 'std_atomic_radius_calculated',
-    'mean_covalent_radius', 'std_covalent_radius',
-    'mean_electron_affinity', 'std_electron_affinity',
-    'mean_electronegativity', 'std_electronegativity',
-    'mean_first_ionization_energy', 'std_first_ionization_energy',
-    'mean_dipole_polarizability', 'std_dipole_polarizability',
-    'mean_atomic_mass', 'std_atomic_mass',
-    'mean_density', 'std_density',
-    'mean_molar_volume', 'std_molar_volume',
-    'mean_boiling_point', 'std_boiling_point',
-    'mean_melting_point', 'std_melting_point',
-    'mean_thermal_conductivity', 'std_thermal_conductivity',
-    'mean_specific_heat', 'std_specific_heat'
-]
-
-target_col = 'band_gap'
-
 # Create dictionary to store element properties
 def extract_element_properties(elements):
     """
